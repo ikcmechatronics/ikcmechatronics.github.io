@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## Introduction
 
-You can use the [editor on GitHub](https://github.com/ikcmechatronics/ikcmechatronics.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This is an information page about i2c communication between devices. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In the purpose of testing the i2c communication, in this page [Arduino Uno master](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/Codes/Master/i2cMaster/i2cMaster.ino) and [PIC16f877a slave](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/Codes/Slave/i2cSlave/i2cSlave.c) functions are provided. You can easily understand and apply them to your project with some modifications according to your software requirements.
 
-### Markdown
+It is possible for you to use the i2c test board with your devices. If you prefer to use it, please arrange an appointment with sending a message to mertcan.kocak@ikc.edu.tr. For more information about i2c test board, please click [here](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/i2c%20Hardware%20Board/i2c%20Test%20Board%20Information%20Document.pdf) to see the document.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Notes and recommendations about i2c communication
 
-```markdown
-Syntax highlighted code block
+* If you prefer CCS C Compiler as the compiler, it is recommended to use the version 5.008 or later.
 
-# Header 1
-## Header 2
-### Header 3
+* Start simple code parts to achieve the communication. Then implement complex algorithms.
 
-- Bulleted
-- List
+* It is better to start with the scan the devices on the bus from master. For this purpose, first upload simple slave programs to slave microcontrollers with predefined address. Then, i2c scanner codes can be used to understand whether there is a hardware problem or not. Also, with this procedure, the possiblity to be disorder by means of addresses vanishes. You can reach the i2c scanner code for Arduino Uno as a master device from [here.](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/Codes/Master/i2cScanner/i2cScanner.ino)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ikcmechatronics/ikcmechatronics.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+*This page will be updated with the new works. Also, it is possible for you to contribute us to develop a better algorithms by means of i2c communication.
