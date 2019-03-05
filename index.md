@@ -4,7 +4,7 @@ This is an information page about i2c communication between devices.
 
 In the purpose of testing the i2c communication, in this page [Arduino Uno master](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/Codes/Master/i2cMaster/i2cMaster.ino) and [PIC16f877a slave](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/Codes/Slave/i2cSlave/i2cSlave.c) functions are provided. You can easily understand and apply them to your project with some modifications according to your software requirements.
 
-## Real Time Demo Experince
+## Real Time Demo Experience
 Project Groups have opportunity to enroll for demonstration of i2c system in the laboratory. Also, it is possible for gorups to use i2c test board for debugging purposes with appointment. For more information about i2c test board, please click [here](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/i2c%20Hardware%20Board/i2c%20Test%20Board%20Information%20Document.pdf) to see the document.
 
 Project groups should arrange an appointment with sending a message to mertcan.kocak@ikc.edu.tr. At least 51% of group members must attend to the demonstration. (If project group consists of 4 students, 3 students must attend).
