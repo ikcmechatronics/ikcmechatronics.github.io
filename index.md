@@ -7,9 +7,12 @@ In the purpose of testing the i2c communication, in this page [Arduino Uno maste
 ** FOR RASPBERRY PI USERS: Python code for [Raspberry PI as master is uploaded](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/Codes/Master/i2cMaster/i2cRaspberryMaster.py). Here, it should be noted that smbus2 library is used, please first [download](https://github.com/kplindegaard/smbus2) and install this library to your single board computers. By using this code, you can read and write multiple data via i2c protocol with devices that supports pure i2c (Arduino, PIC etc).
 
 The challenge of using raspbery pi to communicate via i2c is that the python uses the smbus protocol, which uses different data package in multiple data transmission than pure i2c. More information about conflict in between smbus and i2c protocol in multiple data transfer can be seen below;
-[image]()
+
+![image](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/i2c_smd_multiple_byte.PNG)
+
 However, if the data transfer is not multiple (single byte read or write), there is no conflict between protocols, thus the modification is not needed in software. More information about data package in reading and writing single byte can be seen below;
-[image]()
+
+![image](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/i2c_smd_single_byte.PNG)
 
 ## Real Time Demo Experience
 Project Groups have opportunity to enroll for demonstration of i2c system in the laboratory. Also, it is possible for gorups to use i2c test board for debugging purposes with appointment. For more information about i2c test board, please click [here](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/i2c%20Hardware%20Board/i2c%20Test%20Board%20Information%20Document.pdf) to see the document.
