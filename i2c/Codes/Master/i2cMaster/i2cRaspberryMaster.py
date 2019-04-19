@@ -16,10 +16,10 @@ while(1):
     with SMBusWrapper(1) as bus:
         # Read 10 bytes from address 0x20
         msg = i2c_msg.read(0x20, 10)
-        bus.i2c_rdwr(msg)
+        bus.i2c_rdwr(msg)         # Regulating the conflict between smbus protocol and pure i2c protocol
         # Write dataToSend package (as Bytes) to address 0x20
         sendMsg = i2c_msg.write(0x20,StringToBytes(dataToSend))
-        bus.i2c_rdwr(sendMsg)
+        bus.i2c_rdwr(sendMsg)     # Regulating the conflict between smbus protocol and pure i2c protocol
         # Alternatively, write integer array to address 0x20
         #sendMsg = i2c_msg.write(0x20, [65, 66, 67, 68])
         #bus.i2c_rdwr(sendMsg)
