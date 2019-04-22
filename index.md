@@ -28,3 +28,5 @@ Project groups should arrange an appointment with sending a message to mertcan.k
 * It is better to start with scanning the devices on the bus from master. For this purpose, first upload simple slave programs to slave microcontrollers with predefined addresses. Then, i2c scanner codes can be used to understand whether there is a hardware problem or not. Also, with this procedure, the possiblity to be disorder by means of addresses vanishes. You can reach the i2c scanner code for Arduino Uno as a master device from [here.](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/Codes/Master/i2cScanner/i2cScanner.ino)
 
 *This page will be updated with the new works. Also, it is possible for you to contribute us to develop a better algorithms by means of i2c communication.
+
+Additional document about Fuzzy Control with Matlab is [here.](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2c/MEE406%20Fuzzy%20Control%20Demo.pdf)
