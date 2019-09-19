@@ -1,3 +1,5 @@
+[Information about i2c Communication](https://github.com/ikcmechatronics/ikcmechatronics.github.io/blob/master/i2cInfo.md)
+
 ## Introduction
 
 This is an information page about i2c communication between devices. 
